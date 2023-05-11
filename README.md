@@ -1,2 +1,2 @@
-# P-pu-el-P-pu-ica
+# Papusel&Papusica
 Site web pentru lucrarea de licenta.
