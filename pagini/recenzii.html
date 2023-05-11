@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8" /> <!--Pentru a putea lucra cu diferite simboluri, emoji-uri-->
+        <link rel="stylesheet" type="text/css" href="../css/style.css" /> <!--Includem fisierul CSS-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--cu ajutorul acestui element 
+            cand o sa deschidem site-ul pe telefonul mobil, el se v-a scala mult mai bine-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" /> <!--librarie pentru iconite-->
+        <title>Papusel&Papusica</title>
+        <script src="https://kit.fontawesome.com/1ac667b9f7.js" crossorigin="anonymous"></script>
+        <script>
+            // Adaugă evenimentul click pentru a deschide sau închide submeniul
+            function toggleSubMeniu() {
+                var subMeniu = document.getElementById('subMeniu');
+                subMeniu.style.display = subMeniu.style.display === 'block' ? 'none': 'block';
+            }
+        </script>
+    </head>
+
+    <body>
+        
+        <header>
+            <a href="../index.html">
+                <i class="fas fa-chess-king logo"></i>
+                Papusel&Papusica
+                <i class="fas fa-chess-queen logo"></i>
+            </a>
+
+            <i id="meniu-btn" class="fas fa-bars" onclick="show()"></i>
+        </header>
+
+        <div class="page-container">
+            
+            <aside id="side-menu">
+            
+                <a href="../index.html" ><i class="fa-solid fa-house logoMeniu"></i>Home</a>  
+                <a href="#" onclick="toggleSubMeniu()"><i class="fa-solid fa-gift logoMeniu"></i>Categorii:
+                    <!-- Submeniul -->
+                    <div id="subMeniu">
+                        <a href="./fete.html">Fete</a>
+                        <a href="./baieti.html">Băieți</a>
+                        <a href="./figurine.html">Figurine</a>
+                        <a href="./plusuri.html">Plușuri</a>
+                        <a href="./accesorii.html">Accesorii</a>
+                    </div> 
+                </a>
+                <a href="./recenzii.html"><i class="fa-solid fa-ranking-star logoMeniu"></i>Recenzii</a>
+                <a href="./asistenta.html"><i class="fa-solid fa-clipboard-question logoMeniu"></i>Asistență</a>
+                <a href="./contact.html"><i class="fa-solid fa-phone logoMeniu"></i>Contact</a>
+            
+            </aside>
+
+            <main>
+                <h2 class="title">Recenzii</h2>
+
+                <div class="row row-event">
+                    <div class="col-50">
+                        <div class="event">
+                            <h4>Recenzie</h4>
+                            <p>
+                                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-50">
+                        <div class="event">
+                            <h4>Recenzie</h4>
+                            <p>
+                                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="row row-event">
+                    <div class="col-50">
+                        <div class="event">
+                            <h4>Recenzie</h4>
+                            <p>
+                                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-50">
+                        <div class="event">
+                            <h4>Recenzie</h4>
+                            <p>
+                                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+        <script src="../js/main.js"></script>
+    </body>
+</html>

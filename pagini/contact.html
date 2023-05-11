@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" /> <!--Pentru a putea lucra cu diferite simboluri, emoji-uri-->
+    <link rel="stylesheet" type="text/css" href="../css/style.css" /> <!--Includem fisierul CSS-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--cu ajutorul acestui element 
+            cand o sa deschidem site-ul pe telefonul mobil, el se v-a scala mult mai bine-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <!--librarie pentru iconite-->
+    <title>Papusel&Papusica</title>
+    <script src="https://kit.fontawesome.com/1ac667b9f7.js" crossorigin="anonymous"></script>
+    <script>
+        // Adaugă evenimentul click pentru a deschide sau închide submeniul
+        function toggleSubMeniu() {
+            var subMeniu = document.getElementById('subMeniu');
+            subMeniu.style.display = subMeniu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <a href="../index.html">
+            <i class="fas fa-chess-king logo"></i>
+            Papusel&Papusica
+            <i class="fas fa-chess-queen logo"></i>
+        </a>
+
+        <i id="meniu-btn" class="fas fa-bars" onclick="show()"></i>
+    </header>
+
+    <div class="page-container">
+
+        <aside id="side-menu">
+
+            <a href="../index.html"><i class="fa-solid fa-house logoMeniu"></i>Home</a>
+            <a href="#" onclick="toggleSubMeniu()"><i class="fa-solid fa-gift logoMeniu"></i>Categorii:
+                <!-- Submeniul -->
+                <div id="subMeniu">
+                    <a href="./fete.html">Fete</a>
+                    <a href="./baieti.html">Băieți</a>
+                    <a href="./figurine.html">Figurine</a>
+                    <a href="./plusuri.html">Plușuri</a>
+                    <a href="./accesorii.html">Accesorii</a>
+                </div> 
+            </a>
+            <a href="./recenzii.html"><i class="fa-solid fa-ranking-star logoMeniu"></i>Recenzii</a>
+            <a href="./asistenta.html"><i class="fa-solid fa-clipboard-question logoMeniu"></i>Asistență</a>
+            <a href="./contact.html"><i class="fa-solid fa-phone logoMeniu"></i>Contact</a>
+
+        </aside>
+
+        <main>
+            <h2 class="title">Contacte</h2>
+            <div class="row">
+                <div class="col-50">
+                    <h3>Contactează-ne dacă:</h3>
+                    <ul class="contact-lista">
+                        <li>Exista probleme la efectuarea comenzii.</li>
+                        <li>Exista probleme la efectuarea platii.</li>
+                        <li>Exista probleme cu produsul.</li>
+                        <li>Site-ul nu functioneaza.</li>
+                        <li>Informatii suplimentare.</li>
+                        <li>Aveti sugestii/propuneri.</li>
+                    </ul>
+                </div>
+                <div class="col-50">
+                    <h3>Date de contact</h3>
+                    <ul class="contact-lista">
+                        <li><b>Adresa:</b> Bucuresti Strada Ion Conea Nr.39</li>
+                        <li><b>Telefon:</b>0770 587 523</li>
+                        <li><b>Program:</b></li>
+                        <p><b>Luni - Vineri:</b> 10:00 - 19:00</p>
+                        <p><b>Sambata - Duminica:</b> 12:00 - 14:00</p>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-50">
+                    <iframe class="harta"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22802.173508838416!2d26.026161357835417!3d44.40707033041358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1fff79a443cb1%3A0x23ff05b6b5137738!2sStrada%20Ion%20Conea%2039%2C%20Bucure%C8%99ti!5e0!3m2!1sro!2sro!4v1683766536785!5m2!1sro!2sro"
+                        allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="col-50">
+                    <div class="contact-form">
+                        <form>
+                            <h3 class="centrare">Lasa un mesaj</h3>
+                            <input type="text" placeholder="Nume" required/>
+                            <input type="text" placeholder="Prenume" required/>
+                            <input type="text" placeholder="Email" required/>
+                            <textarea rows="5" placeholder="Mesaj"required></textarea>
+                            <input type="submit" value="Transmite"/>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
